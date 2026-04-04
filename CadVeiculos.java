@@ -123,6 +123,7 @@ void excluir() {
 
     else if (tipo == 2) {
         // Remoção por nome
+        listar();
         String nome = IO.readln("Digite o nome: ").trim();
         for (int i = 0; i < veiculos.size(); i++) {
             if (veiculos.get(i).equalsIgnoreCase(nome)) {
